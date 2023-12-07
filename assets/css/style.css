@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+/*Primary*/
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+
+    /*Neutral*/
+    --darkgray: hsl(0, 0%, 59%);
+}
+
+body {
+    background-color: var(--darkCyan);
+    background-image: url(/assets/img/bg-pattern-top.svg), 
+    url(/assets/img/bg-pattern-bottom.svg);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+.main-container {
+    background-color: white;
+    width: 326px;
+    height: 375px;
+    margin: 100px auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image {
+    background-image: url(/assets/img/bg-pattern-card.svg);
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-profile {
+    border: 5px solid white;
+    margin: -50px auto 0;
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    background-image: url(/assets/img/image-victor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.paragraph {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.name{
+    font-size: 1.125em;
+    font-weight: 700;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+span {
+    margin-left: 5px;
+    font-weight: 400;
+    color: var(--darkgray);
+}
+
+.city {
+    margin-top: 5px;
+    font-weight: 400;
+    color: var(--darkgray);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.stats div p:first-child{
+    font-weight: 700;
+    font-size: 1.125em;
+    color: var(--veryDarkDesaturatedBlue);
+    text-align: center;
+}
+
+.stats div p:last-child {
+    color: var(--darkgray);
+    font-size: 0.75em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    width: 326px;
+    margin: 20px auto;
+}
+
